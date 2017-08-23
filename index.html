@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Colin White">
+    <meta name="description" content="Map and suggested bicycle route from New York City to Montreal, Quebec. Roughly 400 miles (600km)">
+    <meta name="abstract" content="Bicyle route and map from New York City to Montreal">
+    <meta name="keywords" content="map, route, bicycle, touring, adventure cycling, nycadv, nyc/adv, Montreal, NYC, New York City">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>The Empire Gutter | New York City to Montreal bicycle route</title>
+	
+	<!-- App Styles -->
+	<style>
+		.google-maps {
+			width: 100%;
+			overflow: visible;
+		}
+		/*
+	    .google-maps {
+	        position: relative;
+	        padding-bottom: 75%; // This is the aspect ratio
+	        height: 0;
+	        overflow: hidden;
+	    }
+	    .google-maps iframe {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100% !important;
+	        height: 100% !important;
+	    }
+		*/
+		#map_container{
+		  position: relative;
+		}
+		/*
+		#map{
+		    height: 0;
+		    overflow: hidden;
+		    padding-bottom: 45%;
+		    padding-top: 30px;
+		    position: relative;
+		}
+		*/
+		#map{
+		    height: calc(100% - 80px);
+			width: 100%;
+		    overflow: hidden;
+		
+		    position: absolute;
+			top: 80px;
+			left:0;
+		}
+	</style>
+	
+	<!-- Scripts -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqK96T43oVKnLCJPL_lyCnaAgT0pv7ZAA&callback=initMap">
+    </script>
+
+</head>
+<body>
+	<header>
+		<div class="emblem"><img src="#" alt="Empire Gutter: Bicycle route from New York City to Montreal, Quebec Canada"></a>
+		<h1>Empire Gutter: Peer sourced bicycle route from New York City to Montreal, Quebec Canada</h1>
+	</header>
+	
+	<content class="google-maps">
+		
+		   <div id="map"></div>
+			 
+		<!--	
+		<iframe src="https://www.google.com/maps/d/embed?mid=1d0v9q7WgkEeGDXQMTw6vP-kWv24" width="640" height="480"></iframe>
+			 -->
+	</content>
+	
+	<footer>
+		For inquiries, suggestions, and submissions contact: <a href="mailto:ride@nycadv.com">ride@nycadv.com</a>
+	</footer>
+	
+	
+	<!-- Maps data-->
+ <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 42.6526, lng: -73.7562}
+        });
+
+        // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+        // map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
+		map.data.loadGeoJson('empiregutter.json');
+      }
+    </script>
+	
+	
+    <!-- Google Analytics. -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104642995-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	  
+</body>
+</html>
