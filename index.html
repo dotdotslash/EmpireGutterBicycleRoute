@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>The Empire Gutter | New York City to Montreal bicycle route</title>
 	
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
 	<!-- App Styles -->
 	<style>
 		.google-maps {
@@ -31,26 +32,99 @@
 	        height: 100% !important;
 	    }
 		*/
+		
+		/* #0065A0 */
+		
+		header {
+			position: fixed;
+		    top: 0;
+		    z-index: 100;
+		    width: 100%;
+			height: 90px;
+			background: #FFF;
+			border-bottom: solid 3px #0BAA89;
+		}
+		
+		header .emblem {
+			height: 197px;
+			width: 195px;
+		    position: absolute;
+		    left: 50%;
+			top: 3px;
+		    transform: translate(-90px,0);		
+		}
+		header .emblem img { 
+			width: 100%;
+			display: block;
+			z-index: 0;
+		}
+
+		
+		.hamburger div {
+		    -webkit-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		    transition: .25s ease-in-out;
+		    background-color: #000000;
+		    height: 4px;
+		    left: 0px;
+		    opacity: 1;
+		    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		    position: absolute;
+		    right: 0px;
+		}
+		.hamburger {
+		    height: 20px;
+		    width: 20px;
+		    position: absolute;
+		    right: 40px;
+		    top: 35px;
+		    cursor: pointer;
+		}
+		.hamburger div:nth-child(1) {
+		    margin: 0px;
+		    top: 0px;
+		}
+		.hamburger div:nth-child(2),.hamburger div:nth-child(3) {   
+			left: 0px;
+		    margin-top: -2px;
+		    right: 0px;
+		    top: 50%;
+		}
+		.hamburger div:nth-child(4) {
+		    margin-top: -4px;
+		    top: 100%;
+		}
+		
+		
 		#map_container{
 		  position: relative;
 		}
-		/*
 		#map{
-		    height: 0;
-		    overflow: hidden;
-		    padding-bottom: 45%;
-		    padding-top: 30px;
-		    position: relative;
-		}
-		*/
-		#map{
-		    height: calc(100% - 80px);
+		    height: calc(100% - 130px);
 			width: 100%;
 		    overflow: hidden;
 		
 		    position: absolute;
-			top: 80px;
+			top: 90px;
 			left:0;
+		}
+		
+		footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 40px;
+			background: #FFF;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			font-size: 12px;
+		}
+		
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
 		}
 	</style>
 	
@@ -62,21 +136,38 @@
 </head>
 <body>
 	<header>
-		<div class="emblem"><img src="#" alt="Empire Gutter: Bicycle route from New York City to Montreal, Quebec Canada"></a>
-		<h1>Empire Gutter: Peer sourced bicycle route from New York City to Montreal, Quebec Canada</h1>
+		<div class="emblem">
+			<img src="img/emblem-02.png" alt="Empire Gutter: Bicycle route from New York City to Montreal, Quebec Canada"></a>
+		</div>
+		<nav>
+			<ul>
+				<li>About</li>
+				<li>Routes</li>
+				<li>Earn the emblem</li>
+			</ul>
+		</nav>
+		<div class="language"><a href="#" class="active">En</a> | <a href="#">Fr</a> </div>
 	</header>
 	
+	<div id="about" class="popup">
+		<h1>Empire Gutter: Peer sourced bicycle route from New York City to Montreal, Quebec Canada</h1>
+	</div>
+	
+	<div id="Routes" class="popup">
+		<h1>Routes</h1>
+		New York State Bike Route 9
+		Suggested route
+		Scenic route
+		Mountainous route 
+	</div>
+	
 	<content class="google-maps">
-		
-		   <div id="map"></div>
-			 
-		<!--	
-		<iframe src="https://www.google.com/maps/d/embed?mid=1d0v9q7WgkEeGDXQMTw6vP-kWv24" width="640" height="480"></iframe>
-			 -->
+		<div id="map"></div>
 	</content>
 	
 	<footer>
-		For inquiries, suggestions, and submissions contact: <a href="mailto:ride@nycadv.com">ride@nycadv.com</a>
+		<div class="left">© 2017 NYC/ADV. All Rights Reserved.</div>
+		<div class="right">For inquiries, suggestions, and submissions contact: <a href="mailto:ride@nycadv.com">ride@nycadv.com</a></div>
 	</footer>
 	
 	
@@ -87,90 +178,357 @@
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 7,
           center: {lat: 42.6526, lng: -73.7562},
-			styles: [
-			            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-			            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-			            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-			            {
-			              featureType: 'administrative.locality',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#d59563'}]
-			            },
-			            {
-			              featureType: 'poi',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#d59563'}]
-			            },
-			            {
-			              featureType: 'poi.park',
-			              elementType: 'geometry',
-			              stylers: [{color: '#263c3f'}]
-			            },
-			            {
-			              featureType: 'poi.park',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#6b9a76'}]
-			            },
-			            {
-			              featureType: 'road',
-			              elementType: 'geometry',
-			              stylers: [{color: '#38414e'}]
-			            },
-			            {
-			              featureType: 'road',
-			              elementType: 'geometry.stroke',
-			              stylers: [{color: '#212a37'}]
-			            },
-			            {
-			              featureType: 'road',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#9ca5b3'}]
-			            },
-			            {
-			              featureType: 'road.highway',
-			              elementType: 'geometry',
-			              stylers: [{color: '#746855'}]
-			            },
-			            {
-			              featureType: 'road.highway',
-			              elementType: 'geometry.stroke',
-			              stylers: [{color: '#1f2835'}]
-			            },
-			            {
-			              featureType: 'road.highway',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#f3d19c'}]
-			            },
-			            {
-			              featureType: 'transit',
-			              elementType: 'geometry',
-			              stylers: [{color: '#2f3948'}]
-			            },
-			            {
-			              featureType: 'transit.station',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#d59563'}]
-			            },
-			            {
-			              featureType: 'water',
-			              elementType: 'geometry',
-			              stylers: [{color: '#17263c'}]
-			            },
-			            {
-			              featureType: 'water',
-			              elementType: 'labels.text.fill',
-			              stylers: [{color: '#515c6d'}]
-			            },
-			            {
-			              featureType: 'water',
-			              elementType: 'labels.text.stroke',
-			              stylers: [{color: '#17263c'}]
-			            }
-			          ]
+			styles: 
+			
+			[
+			  {
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#ebe3cd"
+			      }
+			    ]
+			  },
+			  {
+			    "elementType": "labels",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#523735"
+			      }
+			    ]
+			  },
+			  {
+			    "elementType": "labels.text.stroke",
+			    "stylers": [
+			      {
+			        "color": "#f5f1e6"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "administrative",
+			    "elementType": "geometry.stroke",
+			    "stylers": [
+			      {
+			        "color": "#c9b2a6"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "administrative.land_parcel",
+			    "elementType": "geometry.stroke",
+			    "stylers": [
+			      {
+			        "color": "#dcd2be"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "administrative.land_parcel",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#ae9e90"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "administrative.neighborhood",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "landscape",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "landscape.natural",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "landscape.natural",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#dfd2ae"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "landscape.natural.landcover",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "landscape.natural.terrain",
+			    "stylers": [
+			      {
+			        "weight": 8
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#dfd2ae"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi",
+			    "elementType": "labels.text",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#93817c"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.attraction",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.business",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.medical",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.park",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.park",
+			    "elementType": "geometry.fill",
+			    "stylers": [
+			      {
+			        "color": "#a5b076"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "poi.park",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#447530"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#f5f1e6"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road",
+			    "elementType": "labels.icon",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.arterial",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.arterial",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#fdfcf8"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.highway",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.highway",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#f8c967"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.highway",
+			    "elementType": "geometry.stroke",
+			    "stylers": [
+			      {
+			        "color": "#e9bc62"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.highway.controlled_access",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#e98d58"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.highway.controlled_access",
+			    "elementType": "geometry.stroke",
+			    "stylers": [
+			      {
+			        "color": "#db8555"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "road.local",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#806b63"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "transit",
+			    "stylers": [
+			      {
+			        "visibility": "off"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "transit.line",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#dfd2ae"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "transit.line",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#8f7d77"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "transit.line",
+			    "elementType": "labels.text.stroke",
+			    "stylers": [
+			      {
+			        "color": "#ebe3cd"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "transit.station",
+			    "elementType": "geometry",
+			    "stylers": [
+			      {
+			        "color": "#dfd2ae"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "water",
+			    "stylers": [
+			      {
+			        "visibility": "on"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "water",
+			    "elementType": "geometry.fill",
+			    "stylers": [
+			      {
+			        "color": "#b9d3c2"
+			      }
+			    ]
+			  },
+			  {
+			    "featureType": "water",
+			    "elementType": "labels.text.fill",
+			    "stylers": [
+			      {
+			        "color": "#92998d"
+			      }
+			    ]
+			  }
+			]
+						
         });
 
-        // NOTE: This uses cross-domain XHR, and may not work on older browsers.
-        // map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
+
 		map.data.loadGeoJson('empiregutter.json');
 		
 		map.data.setStyle(function(feature) {
