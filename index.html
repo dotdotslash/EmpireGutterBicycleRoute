@@ -12,126 +12,17 @@
 	
 	<link type="text/css" rel="stylesheet" href="css/reset.css">
 	<!-- App Styles -->
-	<style>
-		.google-maps {
-			width: 100%;
-			overflow: visible;
-		}
-		/*
-	    .google-maps {
-	        position: relative;
-	        padding-bottom: 75%; // This is the aspect ratio
-	        height: 0;
-	        overflow: hidden;
-	    }
-	    .google-maps iframe {
-	        position: absolute;
-	        top: 0;
-	        left: 0;
-	        width: 100% !important;
-	        height: 100% !important;
-	    }
-		*/
-		
-		/* #0065A0 */
-		
-		header {
-			position: fixed;
-		    top: 0;
-		    z-index: 100;
-		    width: 100%;
-			height: 90px;
-			background: #FFF;
-			border-bottom: solid 3px #0BAA89;
-		}
-		
-		header .emblem {
-			height: 197px;
-			width: 195px;
-		    position: absolute;
-		    left: 50%;
-			top: 3px;
-		    transform: translate(-90px,0);		
-		}
-		header .emblem img { 
-			width: 100%;
-			display: block;
-			z-index: 0;
-		}
-
-		
-		.hamburger div {
-		    -webkit-transform: rotate(0deg);
-		    transform: rotate(0deg);
-		    transition: .25s ease-in-out;
-		    background-color: #000000;
-		    height: 4px;
-		    left: 0px;
-		    opacity: 1;
-		    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-		    position: absolute;
-		    right: 0px;
-		}
-		.hamburger {
-		    height: 20px;
-		    width: 20px;
-		    position: absolute;
-		    right: 40px;
-		    top: 35px;
-		    cursor: pointer;
-		}
-		.hamburger div:nth-child(1) {
-		    margin: 0px;
-		    top: 0px;
-		}
-		.hamburger div:nth-child(2),.hamburger div:nth-child(3) {   
-			left: 0px;
-		    margin-top: -2px;
-		    right: 0px;
-		    top: 50%;
-		}
-		.hamburger div:nth-child(4) {
-		    margin-top: -4px;
-		    top: 100%;
-		}
-		
-		
-		#map_container{
-		  position: relative;
-		}
-		#map{
-		    height: calc(100% - 130px);
-			width: 100%;
-		    overflow: hidden;
-		
-		    position: absolute;
-			top: 90px;
-			left:0;
-		}
-		
-		footer {
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			height: 40px;
-			background: #FFF;
-			padding: 10px 20px;
-			box-sizing: border-box;
-			font-size: 12px;
-		}
-		
-		.left {
-			float: left;
-		}
-		.right {
-			float: right;
-		}
-	</style>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 	<!-- Scripts -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqK96T43oVKnLCJPL_lyCnaAgT0pv7ZAA&callback=initMap">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqK96T43oVKnLCJPL_lyCnaAgT0pv7ZAA&callback=initMap"></script>
+	
+	
+   
+	
 
 </head>
 <body>
@@ -142,15 +33,25 @@
 		<nav>
 			<ul>
 				<li>About</li>
-				<li>Routes</li>
+				
+				<li id="path-a">Path A</li>
+				<li id="path-b">Path B</li>
+				<li id="path-c">Path C</li>
+				<li id="path-d">Path D</li>
+				<li id="Champlain-Bikeway-West">Champlain Bikeway West</li>
+				<li id="Champlain-Bikeway-East">Champlain Bikeway East</li>
+				<li id="NY-State-Bike-Route-9">NY State Bike Route 9</li>
+				<li id="spots">Spots</li>
+				
 				<li>Earn the emblem</li>
 			</ul>
 		</nav>
-		<div class="language"><a href="#" class="active">En</a> | <a href="#">Fr</a> </div>
+		<div class="language"><a href="#" class="active">En</a> | <a href="#">Fr</a></div>
 	</header>
 	
 	<div id="about" class="popup">
 		<h1>Empire Gutter: Peer sourced bicycle route from New York City to Montreal, Quebec Canada</h1>
+		<p>Have a suggestion or question? Reach out <a href="mailto:ride@nycadv.com">ride@nycadv.com</a> or contribute to the repository on <a href="https://github.com/dotdotslash/EmpireGutterBicycleRoute">GitHub</a></p>
 	</div>
 	
 	<div id="Routes" class="popup">
@@ -163,6 +64,7 @@
 	
 	<content class="google-maps">
 		<div id="map"></div>
+		<div id="elevation_chart"></div>
 	</content>
 	
 	<footer>
@@ -178,8 +80,7 @@
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 7,
           center: {lat: 42.6526, lng: -73.7562},
-			styles: 
-			
+			styles: 	
 			[
 			  {
 			    "elementType": "geometry",
@@ -524,49 +425,68 @@
 			      }
 			    ]
 			  }
-			]
-						
+			]			
         });
-
-
-		map.data.loadGeoJson('empiregutter.json');
 		
-		map.data.setStyle(function(feature) {
-		    var route = feature.getProperty('route');
-			if(route) {
-				if(route == "ACA Adirondack") {
-				    return {
-				      strokeColor: "#FF0000",
-				      strokeWeight: 10
-				    };
-				} else if(route == "Scenic Route") {
-				    return {
-				       strokeColor: "#00FF00",
-						strokeWeight: 5
-				    };
-				} else if(route == "John Brophy 2016") {
-				    return {
-				       strokeColor: "#0000FF",
-				      strokeWeight: 1
-				    };
-				} else if(route == "ADV 2016") {
-				    return {
-				       strokeColor: "#00FFFF",
-				      strokeWeight: 10
-				    };
+		var mapLayers = ['path_a', 'path_b', 'path_c', 'path_d', 'Champlain_Bikeway_West', 'Champlain_Bikeway_East', 'spots', 'NY_State_Bike_Route_9'];
+		mapLayers.forEach(function(element) {			
+			var newPath = new google.maps.Data();
+			newPath.loadGeoJson('data/'+element+'.json');
+			newPath.setMap(map);
+			
+			element = element.replace(/_/g, '-');
+			var button = document.getElementById(element);
+			var routeState = false;
+			button.addEventListener("click", function(){
+				if(routeState) {
+					newPath.setMap(map);
+					routeState = false;
+				} else {
+					newPath.setMap(null);
+					routeState = true;
 				}
-			}
+			});
+			
+			newPath.setStyle(function(feature) {
+				/*
+			    var route = feature.getProperty('route');
+				if(route) {
+					if(route == "ACA Adirondack") {
+					    return {
+					      strokeColor: "#137abd",
+					      strokeWeight: 6
+					    };
+					} else if(route == "Scenic Route") {
+					    return {
+					       strokeColor: "#0065A0",
+							strokeWeight: 4
+					    };
+					} else if(route == "John Brophy 2016") {
+					    return {
+					       strokeColor: "#0065A0",
+					      strokeWeight: 4
+					    };
+					} else if(route == "ADV 2016") {
+					    return {
+					       strokeColor: "#0BAA89",
+					      strokeWeight: 6
+					    };
+					}
+				}
+				*/
+			});
 			
 		});
-		
-		/*
-        map.data.setStyle({
-          strokeColor: 'green',
-          strokeWeight: 1
-        });
-		*/
-		
       }
+	  
+	  function fuckIt() {
+  		$.getJSON("data/Champlain_Bikeway_West.json", function(json) {
+  		    //console.log(json); // this will show the info it in firebug console
+  		    console.log(json.features[0].geometry.coordinates); // this will show the info it in firebug console
+			//json.features
+  		});
+	  }
+		 
     </script>
 	
 	

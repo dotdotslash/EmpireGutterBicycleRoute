@@ -1,0 +1,1406 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9308631,
+                    41.8425937,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mills Norrie State Park",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2230186,
+                    43.6990821,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Halfmoon Pond State Park",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.5275052,
+                    42.3190611,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Fox Hill Camping Area",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7092236,
+                    43.4163194,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake George Battleground State Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3503618,
+                    44.1828737,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Button Bay State Park",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2947643,
+                    44.6863838,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Grand Isle State Park",
+                "styleUrl": "#icon-1765-AFB42B",
+                "styleHash": "-60f25c0e",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-normal",
+                    "highlight": "#icon-1765-AFB42B-highlight"
+                },
+                "description": "http://www.vtstateparks.com/pdfs/grandisle.pdf"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8300928,
+                    41.4625515,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Fahnestock State Park Office",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0672961,
+                    41.2323352,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Beaver Pond Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9098915,
+                    42.3745544,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Earlton Hill Family Campgrounds",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9845249,
+                    42.2120669,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Brookside Campgrounds",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.57671,
+                    43.097982,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Schuyler Yacht Basin",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.704025,
+                    43.2304925,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Moreau Lake State Park",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4865194,
+                    43.7923131,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rogers Rock Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4243198,
+                    44.0283432,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Crown Point Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.236016,
+                    44.494758,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "North Beach Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2175831,
+                    44.5450022,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Malletts Bay Campground",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.217636,
+                    44.393356,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Shelburne Camping Area",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7176979,
+                    43.0538619,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lee's Trailer Park",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8158598,
+                    43.0741325,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pine Grove Family Camp",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4035799,
+                    44.0314,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "10 Acres Campground",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3640814,
+                    45.1158054,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Camping Grégoire Plage (Lacolle)",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.263528,
+                    45.1390749,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Camping DOMAINE RIVIÈRA",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3309131,
+                    45.2946752,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Camping Les Cèdres",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3584,
+                    45.3766313,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Camping Joie De Vivre",
+                "styleUrl": "#icon-1765-DB4436-nodesc",
+                "styleHash": "-6160e319",
+                "styleMapHash": {
+                    "normal": "#icon-1765-DB4436-nodesc-normal",
+                    "highlight": "#icon-1765-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.762249,
+                    43.654366,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rancho Pines Campground",
+                "styleUrl": "#icon-1859-DB4436-nodesc",
+                "styleHash": "-1de91173",
+                "styleMapHash": {
+                    "normal": "#icon-1859-DB4436-nodesc-normal",
+                    "highlight": "#icon-1859-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7917381,
+                    43.7481533,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Eagle Point Campground",
+                "styleUrl": "#icon-1765-AFB42B-nodesc",
+                "styleHash": "-3fce58a5",
+                "styleMapHash": {
+                    "normal": "#icon-1765-AFB42B-nodesc-normal",
+                    "highlight": "#icon-1765-AFB42B-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0086769,
+                    40.7484805,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "'wichcraft",
+                "styleUrl": "#icon-962-93D7E8-nodesc",
+                "styleHash": "-69172d08",
+                "styleMapHash": {
+                    "normal": "#icon-962-93D7E8-nodesc-normal",
+                    "highlight": "#icon-962-93D7E8-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.567256,
+                    45.5016889,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Montreal",
+                "styleUrl": "#icon-959-4186F0-nodesc",
+                "styleHash": "-7f18f518",
+                "styleMapHash": {
+                    "normal": "#icon-959-4186F0-nodesc-normal",
+                    "highlight": "#icon-959-4186F0-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7562317,
+                    42.6525793,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Albany",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.212072,
+                    44.4758825,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Burlington",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2544903,
+                    45.305771,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Saint-Jean-sur-Richelieu",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9376901,
+                    41.7071475,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Poughkeepsie Station",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7123408,
+                    43.4261809,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake George",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4996614,
+                    43.7458677,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Hague Market",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7762313,
+                    43.4967351,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Warrensburg",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8348307,
+                    43.3128008,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake Luzerne",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7845651,
+                    43.0831301,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Saratoga Springs",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4090087,
+                    44.5265409,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Port Kent",
+                "styleUrl": "#icon-503-7C3592-nodesc",
+                "styleHash": "-1c68994a",
+                "styleMapHash": {
+                    "normal": "#icon-503-7C3592-nodesc-normal",
+                    "highlight": "#icon-503-7C3592-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0085937,
+                    40.7485972,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "'wichcraft",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8300106,
+                    41.462508,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Fahnestock State Park Office",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.937685,
+                    41.70706,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Poughkeepsie Station",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9099103,
+                    42.3745535,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Earlton Hill Family Campgrounds",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.5763618,
+                    43.0987947,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Schuyler Yacht Basin",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7123316,
+                    43.4262019,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake George",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4871061,
+                    43.792432,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rogers Rock Campground",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2360006,
+                    44.4947361,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "North Beach Campground",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3728638,
+                    45.0819794,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lacolle, QC, Canada",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.5672184,
+                    45.5017123,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Montreal",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9258065,
+                    40.7621659,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Broadway Station, Queens, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8300106,
+                    41.462508,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Fahnestock State Park Office",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9302048,
+                    41.8425276,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mills Norrie State Park",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.688589,
+                    42.5739927,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Hostfield Inn, Columbia Turnpike, Castleton-on-Hudson, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7176979,
+                    43.0538619,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lee's Trailer Park",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7614003,
+                    43.653955,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rancho Pines Campground",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.3503629,
+                    44.1829213,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Button Bay State Park",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.2947831,
+                    44.6863842,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Grand Isle State Park",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.5672184,
+                    45.5017123,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Montreal",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7845388,
+                    43.0831914,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Saratoga Springs",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8348169,
+                    43.312823,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake Luzerne",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7761284,
+                    43.4968173,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Warrensburg",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4995009,
+                    43.7459796,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Hague Market",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4089648,
+                    44.5264678,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Port Kent",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.016845,
+                    40.7025005,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Battery Park, New York, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0996905,
+                    41.2152657,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Harriman State park, Camp Winaki Road, Stony Point, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0867881,
+                    41.747562,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "New Paltz, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.9973929,
+                    41.9269823,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kingston, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0220749,
+                    42.415372,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Greenville, NY, United States",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7561696,
+                    42.6526379,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Albany",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.7123316,
+                    43.4262019,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Lake George",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.4871061,
+                    43.792432,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rogers Rock Campground",
+                "styleUrl": "#icon-503-DB4436-nodesc",
+                "styleHash": "4df7efe2",
+                "styleMapHash": {
+                    "normal": "#icon-503-DB4436-nodesc-normal",
+                    "highlight": "#icon-503-DB4436-nodesc-highlight"
+                }
+            }
+        }
+    ]
+}
