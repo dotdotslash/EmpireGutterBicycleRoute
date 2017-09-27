@@ -12,6 +12,7 @@
                 ]
             },
             "properties": {
+				"icon": "http://maps.google.com/mapfiles/ms/icons/blue.png",
                 "name": "Mills Norrie State Park",
                 "styleUrl": "#icon-1765-AFB42B-nodesc",
                 "styleHash": "-3fce58a5",
@@ -32,6 +33,7 @@
                 ]
             },
             "properties": {
+				"icon": "http://maps.google.com/mapfiles/ms/icons/blue.png",
                 "name": "Halfmoon Pond State Park",
                 "styleUrl": "#icon-1765-AFB42B-nodesc",
                 "styleHash": "-3fce58a5",
@@ -52,6 +54,7 @@
                 ]
             },
             "properties": {
+				"icon": "http://maps.google.com/mapfiles/ms/icons/blue.png",
                 "name": "Fox Hill Camping Area",
                 "styleUrl": "#icon-1859-DB4436-nodesc",
                 "styleHash": "-1de91173",
@@ -72,6 +75,7 @@
                 ]
             },
             "properties": {
+				"icon": "http://maps.google.com/mapfiles/ms/icons/blue.png",
                 "name": "Lake George Battleground State Campground",
                 "styleUrl": "#icon-1765-AFB42B-nodesc",
                 "styleHash": "-3fce58a5",
@@ -92,6 +96,7 @@
                 ]
             },
             "properties": {
+				"icon": "http://maps.google.com/mapfiles/ms/icons/blue.png",
                 "name": "Button Bay State Park",
                 "styleUrl": "#icon-1765-AFB42B-nodesc",
                 "styleHash": "-3fce58a5",

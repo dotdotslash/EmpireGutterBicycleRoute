@@ -17,13 +17,6 @@
 	
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
-	<!-- Scripts -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqK96T43oVKnLCJPL_lyCnaAgT0pv7ZAA&callback=initMap"></script>
-	
-	
-   
-	
-
 </head>
 <body>
 	<header>
@@ -33,17 +26,7 @@
 		<nav>
 			<ul>
 				<li>About</li>
-				
-				<li id="path-a">Path A</li>
-				<li id="path-b">Path B</li>
-				<li id="path-c">Path C</li>
-				<li id="path-d">Path D</li>
-				<li id="Champlain-Bikeway-West">Champlain Bikeway West</li>
-				<li id="Champlain-Bikeway-East">Champlain Bikeway East</li>
-				<li id="NY-State-Bike-Route-9">NY State Bike Route 9</li>
-				<li id="spots">Spots</li>
-				
-				<li>Earn the emblem</li>
+				<li>Earn the emblem</li>	
 			</ul>
 		</nav>
 		<div class="language"><a href="#" class="active">En</a> | <a href="#">Fr</a></div>
@@ -67,6 +50,41 @@
 		<div id="elevation_chart"></div>
 	</content>
 	
+	<aside>
+		Routes
+		<ul>
+			<li class="dropdown">
+				<span>Non official</span>
+				<ul>
+					<li id="west-scenic" class="path">Westside Scenic</li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<span>Bike Paths and Rail Trails</span>
+				<ul>
+					<li id="NY-State-Bike-Route-9" class="path">NY State Bike Route 9</li>
+					<li id="aca-adk" class="path">ACA ADK spur</li>
+					<li id="Champlain-Bikeway-West" class="path">Champlain Bikeway West</li>
+					<li id="Champlain-Bikeway-East" class="path">Champlain Bikeway East</li>
+					<li id="#" class="path">Parallel Rail Trails</li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<span>Peer Routes</span>
+				<ul>
+					<li id="brophy" class="path">Brophy 2016</li>
+					<li id="adv-2016" class="path">ADV 2016</li>
+					<li id="chris" class="path">Chris 2017</li>
+				</ul>
+			</li>
+			<li> 
+				<ul>
+					<li id="spots">Spots</li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+	
 	<footer>
 		<div class="left">© 2017 NYC/ADV. All Rights Reserved.</div>
 		<div class="right">For inquiries, suggestions, and submissions contact: <a href="mailto:ride@nycadv.com">ride@nycadv.com</a></div>
@@ -75,419 +93,15 @@
 	
 	<!-- Maps data-->
  <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: {lat: 42.6526, lng: -73.7562},
-			styles: 	
-			[
-			  {
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#ebe3cd"
-			      }
-			    ]
-			  },
-			  {
-			    "elementType": "labels",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#523735"
-			      }
-			    ]
-			  },
-			  {
-			    "elementType": "labels.text.stroke",
-			    "stylers": [
-			      {
-			        "color": "#f5f1e6"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "administrative",
-			    "elementType": "geometry.stroke",
-			    "stylers": [
-			      {
-			        "color": "#c9b2a6"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "administrative.land_parcel",
-			    "elementType": "geometry.stroke",
-			    "stylers": [
-			      {
-			        "color": "#dcd2be"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "administrative.land_parcel",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#ae9e90"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "administrative.neighborhood",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "landscape",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "landscape.natural",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "landscape.natural",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#dfd2ae"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "landscape.natural.landcover",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "landscape.natural.terrain",
-			    "stylers": [
-			      {
-			        "weight": 8
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#dfd2ae"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi",
-			    "elementType": "labels.text",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#93817c"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.attraction",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.business",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.medical",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.park",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.park",
-			    "elementType": "geometry.fill",
-			    "stylers": [
-			      {
-			        "color": "#a5b076"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "poi.park",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#447530"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#f5f1e6"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road",
-			    "elementType": "labels.icon",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.arterial",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.arterial",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#fdfcf8"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.highway",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.highway",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#f8c967"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.highway",
-			    "elementType": "geometry.stroke",
-			    "stylers": [
-			      {
-			        "color": "#e9bc62"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.highway.controlled_access",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#e98d58"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.highway.controlled_access",
-			    "elementType": "geometry.stroke",
-			    "stylers": [
-			      {
-			        "color": "#db8555"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "road.local",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#806b63"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "transit",
-			    "stylers": [
-			      {
-			        "visibility": "off"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "transit.line",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#dfd2ae"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "transit.line",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#8f7d77"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "transit.line",
-			    "elementType": "labels.text.stroke",
-			    "stylers": [
-			      {
-			        "color": "#ebe3cd"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "transit.station",
-			    "elementType": "geometry",
-			    "stylers": [
-			      {
-			        "color": "#dfd2ae"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "water",
-			    "stylers": [
-			      {
-			        "visibility": "on"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "water",
-			    "elementType": "geometry.fill",
-			    "stylers": [
-			      {
-			        "color": "#b9d3c2"
-			      }
-			    ]
-			  },
-			  {
-			    "featureType": "water",
-			    "elementType": "labels.text.fill",
-			    "stylers": [
-			      {
-			        "color": "#92998d"
-			      }
-			    ]
-			  }
-			]			
-        });
-		
-		var mapLayers = ['path_a', 'path_b', 'path_c', 'path_d', 'Champlain_Bikeway_West', 'Champlain_Bikeway_East', 'spots', 'NY_State_Bike_Route_9'];
-		mapLayers.forEach(function(element) {			
-			var newPath = new google.maps.Data();
-			newPath.loadGeoJson('data/'+element+'.json');
-			newPath.setMap(map);
-			
-			element = element.replace(/_/g, '-');
-			var button = document.getElementById(element);
-			var routeState = false;
-			button.addEventListener("click", function(){
-				if(routeState) {
-					newPath.setMap(map);
-					routeState = false;
-				} else {
-					newPath.setMap(null);
-					routeState = true;
-				}
-			});
-			
-			newPath.setStyle(function(feature) {
-				/*
-			    var route = feature.getProperty('route');
-				if(route) {
-					if(route == "ACA Adirondack") {
-					    return {
-					      strokeColor: "#137abd",
-					      strokeWeight: 6
-					    };
-					} else if(route == "Scenic Route") {
-					    return {
-					       strokeColor: "#0065A0",
-							strokeWeight: 4
-					    };
-					} else if(route == "John Brophy 2016") {
-					    return {
-					       strokeColor: "#0065A0",
-					      strokeWeight: 4
-					    };
-					} else if(route == "ADV 2016") {
-					    return {
-					       strokeColor: "#0BAA89",
-					      strokeWeight: 6
-					    };
-					}
-				}
-				*/
-			});
-			
-		});
-      }
-	  
-	  function fuckIt() {
-  		$.getJSON("data/Champlain_Bikeway_West.json", function(json) {
-  		    //console.log(json); // this will show the info it in firebug console
-  		    console.log(json.features[0].geometry.coordinates); // this will show the info it in firebug console
-			//json.features
-  		});
-	  }
-		 
+
     </script>
+	  
+    <script src="js/script.js"></script>
+	  
+	  
+  	<!-- Scripts -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqK96T43oVKnLCJPL_lyCnaAgT0pv7ZAA&callback=initMap"></script>
+	  
 	
 	
     <!-- Google Analytics. -->
