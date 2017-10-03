@@ -1,3 +1,7 @@
+$white: #FFF;
+$gutterBlue: #0065A0;
+$gutterGreen: #0BAA89;
+
 .google-maps {
 	width: 100%;
 	overflow: visible;
@@ -79,7 +83,6 @@ header {
 	left:0;
 }
 
-
 aside {
     position: fixed;
     top: 155px;
@@ -92,6 +95,16 @@ aside {
 	li {
 		cursor: pointer;
 		position: relative;
+		
+		i {
+		    display: inline-block;
+		    position: absolute;
+		    background: #000;
+		    width: .5em;
+		    height: .5em;
+		    right: 0;
+		    top: .25em;
+		}
 		
 		&.path::after {
 		    content: "";
@@ -106,6 +119,15 @@ aside {
 		
 		&.pink::after {
 			background: #FF00FF;
+		}
+		&.green::after {
+			background: $gutterGreen;
+		}
+		&.blue::after {
+			background: $gutterBlue;
+		}
+		&.white::after {
+			background: $white;
 		}
 	}
 	

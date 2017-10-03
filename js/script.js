@@ -387,8 +387,8 @@ mapLayers.forEach(function(element) {
 	newPath.setStyle(function(feature) {
 
 	    return {
-			       strokeColor: element[1],
-			      strokeWeight: 6,
+			strokeColor: element[1],
+			strokeWeight: 6,
 	    	icon: feature.getProperty('icon')
 	    };
 		

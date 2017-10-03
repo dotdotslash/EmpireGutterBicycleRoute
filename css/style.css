@@ -74,6 +74,14 @@ aside {
   aside li {
     cursor: pointer;
     position: relative; }
+    aside li i {
+      display: inline-block;
+      position: absolute;
+      background: #000;
+      width: .5em;
+      height: .5em;
+      right: 0;
+      top: .25em; }
     aside li.path::after {
       content: "";
       display: block;
@@ -85,6 +93,12 @@ aside {
       top: .25em; }
     aside li.pink::after {
       background: #FF00FF; }
+    aside li.green::after {
+      background: #0BAA89; }
+    aside li.blue::after {
+      background: #0065A0; }
+    aside li.white::after {
+      background: #FFF; }
   aside li.dropdown span::after {
     content: ">"; }
   aside li.dropdown ul {
